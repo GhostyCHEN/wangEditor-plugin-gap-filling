@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid'
 
-export function genRandomStr(prefix = 'r') {
-  return `${prefix}-${nanoid()}`
+export function genGapFillingId() {
+  return nanoid(16)
 }

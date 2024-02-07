@@ -1,6 +1,4 @@
-import './asserts/index.less'
-
 // @ts-ignore
-import table from './module/index'
+import module from './module/index'
 
-export default table
+export default module

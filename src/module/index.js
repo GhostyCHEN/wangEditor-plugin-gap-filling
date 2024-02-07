@@ -1,17 +1,15 @@
-import withNTable from './plugin'
-import { renderTableConf, renderTableRowConf, renderTableCellConf } from './render-elem/index'
-import { tableToHtmlConf, tableRowToHtmlConf, tableCellToHtmlConf } from './elem-to-html'
-import { preParseTableHtmlConf } from './pre-parse-html'
-import { parseCellHtmlConf, parseRowHtmlConf, parseTableHtmlConf } from './parse-elem-html'
-import { insertTableMenuConf, deleteTableMenuConf, fullWidthMenuConf } from './menu/index'
+import withGapFiliing from './plugin'
+import renderElemConf from './render-elem'
+import elemToHtmlConf from './elem-to-html'
+import parseHtmlConf from './parse-elem-html'
+import { GapFillingMenuConf } from './menu/index'
 
 const table = {
-  renderElems: [renderTableConf, renderTableRowConf, renderTableCellConf],
-  elemsToHtml: [tableToHtmlConf, tableRowToHtmlConf, tableCellToHtmlConf],
-  preParseHtml: [preParseTableHtmlConf],
-  parseElemsHtml: [parseCellHtmlConf, parseRowHtmlConf, parseTableHtmlConf],
-  menus: [insertTableMenuConf, deleteTableMenuConf, fullWidthMenuConf],
-  editorPlugin: withNTable,
+  renderElems: [renderElemConf],
+  elemsToHtml: [elemToHtmlConf],
+  parseElemsHtml: [parseHtmlConf],
+  menus: [GapFillingMenuConf],
+  editorPlugin: withGapFiliing,
 }
 
 export default table

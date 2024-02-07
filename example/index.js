@@ -1,16 +1,11 @@
 import { createEditor, createToolbar, Boot } from '@wangeditor/editor'
-import table from '../src/index'
+import GapFillingMoudle from '../src/index'
 
 // 注册
-Boot.registerModule(table)
+Boot.registerModule(GapFillingMoudle)
 
 // 编辑器配置
 const editorConfig = {
-  hoverbarKeys: {
-    ntable: {
-      menuKeys: ['deleteNTable', 'fullNWidth'],
-    },
-  },
   onChange(editor) {
     const html = editor.getHtml()
     document.getElementById('text-html').value = html
@@ -31,7 +26,7 @@ const toolbar = createToolbar({
   config: {
     insertKeys: {
       index: 0,
-      keys: ['insertNTable'], // “插入”表格
+      keys: ['createGapFilling'], // “插入”表格
     },
   },
 })
