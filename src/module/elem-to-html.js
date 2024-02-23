@@ -1,6 +1,6 @@
 function elemToHtml(elem, childrenHtml) {
   const { gapId } = elem
-  return `<span data-w-e-type="gapFilling" gapId='${gapId}'></span>`
+  return `<span data-w-e-type="gapFilling" data-w-e-is-inline data-w-e-is-void gapId='${gapId}'></span>`
 }
 
 const elemToHtmlConf = {

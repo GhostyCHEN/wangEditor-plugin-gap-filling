@@ -3,7 +3,6 @@ import { DomEditor } from '@wangeditor/editor'
 function withGapFiliing(editor) {
   const { isInline, isVoid } = editor
   const newEditor = editor
-
   // 重写 isInline
   newEditor.isInline = elem => {
     const type = DomEditor.getNodeType(elem)
