@@ -1,6 +1,6 @@
 {
   "name": "plugin-gap-filling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wangEditor gap-filling plugin",
   "repository": {
     "type": "git",
