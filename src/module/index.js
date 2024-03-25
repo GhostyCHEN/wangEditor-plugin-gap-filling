@@ -1,4 +1,4 @@
-import withGapFiliing from './plugin'
+import withGapFilling from './plugin'
 import renderElemConf from './render-elem'
 import elemToHtmlConf from './elem-to-html'
 import parseHtmlConf from './parse-elem-html'
@@ -9,7 +9,7 @@ const table = {
   elemsToHtml: [elemToHtmlConf],
   parseElemsHtml: [parseHtmlConf],
   menus: [GapFillingMenuConf],
-  editorPlugin: withGapFiliing,
+  editorPlugin: withGapFilling,
 }
 
 export default table

@@ -1,6 +1,6 @@
 import { Gap_Fill } from '../../constants/icon-svg.js'
 import { genGapFillingId } from '../../utils/util.js'
-class GapFiliing {
+class GapFilling {
   constructor() {
     this.title = '插入填空'
     this.iconSvg = Gap_Fill
@@ -28,4 +28,4 @@ class GapFiliing {
     editor.focus()
   }
 }
-export default GapFiliing
+export default GapFilling

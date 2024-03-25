@@ -1,6 +1,6 @@
 import { DomEditor } from '@wangeditor/editor'
 
-function withGapFiliing(editor) {
+function withGapFilling(editor) {
   const { isInline, isVoid } = editor
   const newEditor = editor
   // 重写 isInline
@@ -25,4 +25,4 @@ function withGapFiliing(editor) {
   return newEditor
 }
 
-export default withGapFiliing
+export default withGapFilling

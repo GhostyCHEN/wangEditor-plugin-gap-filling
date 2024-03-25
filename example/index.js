@@ -18,7 +18,7 @@ const editorConfig = {
 const editor = createEditor({
   selector: '#editor-container',
   config: editorConfig,
-  html: `<p>hello world</p>`,
+  html: `<p>hello world<span data-w-e-type="gapFilling" data-w-e-is-inline data-w-e-is-void gapId='Ys_X54sHKS2iB8uQ'></span><span data-w-e-type="gapFilling" data-w-e-is-inline data-w-e-is-void gapId='ePeP2DQERc_rErvq'></span></p>`,
 })
 const toolbar = createToolbar({
   editor,
